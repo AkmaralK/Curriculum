@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		A26F259D25FF2B7600E4F044 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26F259C25FF2B7600E4F044 /* AppDelegate.swift */; };
 		A26F259F25FF2B7600E4F044 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26F259E25FF2B7600E4F044 /* SceneDelegate.swift */; };
-		A26F25A125FF2B7600E4F044 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26F25A025FF2B7600E4F044 /* ViewController.swift */; };
 		A26F25A425FF2B7600E4F044 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A26F25A225FF2B7600E4F044 /* Main.storyboard */; };
 		A26F25A625FF2B7900E4F044 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A26F25A525FF2B7900E4F044 /* Assets.xcassets */; };
 		A26F25A925FF2B7900E4F044 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A26F25A725FF2B7900E4F044 /* LaunchScreen.storyboard */; };
+		A26F25B425FF2CBF00E4F044 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26F25B325FF2CBF00E4F044 /* CollectionViewCell.swift */; };
+		A26F25B725FF2E6900E4F044 /* StickyGridCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26F25B625FF2E6900E4F044 /* StickyGridCollectionViewLayout.swift */; };
+		A26F25BD25FF302D00E4F044 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26F25BC25FF302D00E4F044 /* ViewController.swift */; };
+		A26F25C125FF314B00E4F044 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26F25C025FF314B00E4F044 /* SampleData.swift */; };
+		A26F25C625FF317700E4F044 /* ModelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26F25C525FF317700E4F044 /* ModelProvider.swift */; };
+		A26F25CA25FF336F00E4F044 /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26F25C925FF336F00E4F044 /* CollectionReusableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A26F259925FF2B7600E4F044 /* IndCurriculum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IndCurriculum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A26F259C25FF2B7600E4F044 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A26F259E25FF2B7600E4F044 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A26F25A025FF2B7600E4F044 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A26F25A325FF2B7600E4F044 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A26F25A525FF2B7900E4F044 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A26F25A825FF2B7900E4F044 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A26F25AA25FF2B7900E4F044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A26F25B325FF2CBF00E4F044 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		A26F25B625FF2E6900E4F044 /* StickyGridCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyGridCollectionViewLayout.swift; sourceTree = "<group>"; };
+		A26F25BC25FF302D00E4F044 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A26F25C025FF314B00E4F044 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		A26F25C525FF317700E4F044 /* ModelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelProvider.swift; sourceTree = "<group>"; };
+		A26F25C925FF336F00E4F044 /* CollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionReusableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,52 @@
 		A26F259B25FF2B7600E4F044 /* IndCurriculum */ = {
 			isa = PBXGroup;
 			children = (
+				A26F25C425FF315F00E4F044 /* Service */,
+				A26F25BF25FF312200E4F044 /* Model */,
+				A26F25B925FF2F9300E4F044 /* Controllers */,
+				A26F25B125FF2CA800E4F044 /* View */,
 				A26F259C25FF2B7600E4F044 /* AppDelegate.swift */,
 				A26F259E25FF2B7600E4F044 /* SceneDelegate.swift */,
-				A26F25A025FF2B7600E4F044 /* ViewController.swift */,
-				A26F25A225FF2B7600E4F044 /* Main.storyboard */,
 				A26F25A525FF2B7900E4F044 /* Assets.xcassets */,
-				A26F25A725FF2B7900E4F044 /* LaunchScreen.storyboard */,
 				A26F25AA25FF2B7900E4F044 /* Info.plist */,
 			);
 			path = IndCurriculum;
+			sourceTree = "<group>";
+		};
+		A26F25B125FF2CA800E4F044 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A26F25A225FF2B7600E4F044 /* Main.storyboard */,
+				A26F25A725FF2B7900E4F044 /* LaunchScreen.storyboard */,
+				A26F25B325FF2CBF00E4F044 /* CollectionViewCell.swift */,
+				A26F25B625FF2E6900E4F044 /* StickyGridCollectionViewLayout.swift */,
+				A26F25C925FF336F00E4F044 /* CollectionReusableView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A26F25B925FF2F9300E4F044 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A26F25BC25FF302D00E4F044 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A26F25BF25FF312200E4F044 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A26F25C025FF314B00E4F044 /* SampleData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A26F25C425FF315F00E4F044 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A26F25C525FF317700E4F044 /* ModelProvider.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +184,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A26F25A125FF2B7600E4F044 /* ViewController.swift in Sources */,
+				A26F25BD25FF302D00E4F044 /* ViewController.swift in Sources */,
+				A26F25CA25FF336F00E4F044 /* CollectionReusableView.swift in Sources */,
+				A26F25C125FF314B00E4F044 /* SampleData.swift in Sources */,
+				A26F25C625FF317700E4F044 /* ModelProvider.swift in Sources */,
+				A26F25B725FF2E6900E4F044 /* StickyGridCollectionViewLayout.swift in Sources */,
 				A26F259D25FF2B7600E4F044 /* AppDelegate.swift in Sources */,
+				A26F25B425FF2CBF00E4F044 /* CollectionViewCell.swift in Sources */,
 				A26F259F25FF2B7600E4F044 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
